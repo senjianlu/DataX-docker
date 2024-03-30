@@ -23,10 +23,10 @@ RUN tar -zxvf jdk-8u131-linux-x64.tar.gz
 RUN mv jdk1.8.0_131  jdk1.8
 RUN rm -f jdk-8u131-linux-x64.tar.gz
 # 下载解压 Maven
-RUN wget https://repo.maven.apache.org/maven2/org/apache/maven/apache-maven/3.6.3/apache-maven-3.6.3-bin.tar.gz --no-check-certificate
-RUN tar -zxvf apache-maven-3.6.3-bin.tar.gz
-RUN mv apache-maven-3.6.3 maven
-RUN rm -f apache-maven-3.6.3-bin.tar.gz
+RUN wget https://dlcdn.apache.org/maven/maven-3/3.9.6/binaries/apache-maven-3.9.6-bin.tar.gz --no-check-certificate
+RUN tar -zxvf apache-maven-3.9.6-bin.tar.gz
+RUN mv apache-maven-3.9.6 maven
+RUN rm -f apache-maven-3.9.6-bin.tar.gz
 
 # 添加容器内的永久环境变量
 RUN sed -i "2 a export JAVA_HOME=/usr/local/jdk1.8" /etc/profile
