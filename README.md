@@ -1,5 +1,10 @@
 # DataX-docker
 
+> 2024/03/31 更新  
+> 由于官方的 DataX 仓库的源码缺乏维护，构建时出现大量 jar 包缺失或版本不兼容问题，因此本项目暂时停止维护。  
+> 容器的最后一次构建时间为：2021/09/16 17:59:00  
+> 版本为：[rabbir/datax:sha256:4ba8fa663647cf87ad39883cabc0da5a995ce1c506a4a10ce13a5d39d622b124](https://hub.docker.com/layers/rabbir/datax/latest/images/sha256-4ba8fa663647cf87ad39883cabc0da5a995ce1c506a4a10ce13a5d39d622b124?context=repo)
+
 ## 项目介绍
 基于官方 CentOS7 镜像的 DataX 容器构建脚本。
 
@@ -11,7 +16,7 @@
 
 ## 注意
 1. 如果你想通过 GitHub Action 来构建镜像，Fork 本仓库后请在 Settings → Secrets 处添加你 Docker Hub 的 $DOCKER_HUB_USERNAME 和 $DOCKER_HUB_ACCESS_TOKEN。  
-2. 如果你不想把 datax 作为 GitHub Action 自动构建用的镜像名，那么你需要前往 .github/workflows/main.yaml 第[ 28 ](https://github.com/senjianlu/DataX-docker/blob/main/.github/workflows/main.yaml#L28)行做相应修改。
+2. 如果你不想把 datax 作为 GitHub Action 自动构建用的镜像名，那么你需要前往 .github/workflows/main.yaml 第[ 28 ](https://github.com/senjianlu/DataX-docker/blob/master/.github/workflows/main.yaml#L28)行做相应修改。
 
 ## 使用手册
 **生成容器镜像：**  
