@@ -41,5 +41,8 @@ docker run --name datax_test_container -v /rab/docker/datax/data:/data rabbir/da
 > wget https://raw.githubusercontent.com/senjianlu/DataX-docker/main/test/stream2stream.json -O /rab/docker/datax/data/test/stream2stream.json
 > ```
 
+## 关联项目
+基于官方 CentOS7 镜像的、整合了 DataX 和 DataX-Web 的构建脚本：[DataX-Web-docker](https://github.com/senjianlu/DataX-Web-docker)
+
 ## 特别鸣谢
 - 感谢 [DigitalOcean](https://www.digitalocean.com/) 为本项目提供测试用服务器
