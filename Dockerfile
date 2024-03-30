@@ -23,7 +23,7 @@ RUN tar -zxvf jdk-8u131-linux-x64.tar.gz
 RUN mv jdk1.8.0_131  jdk1.8
 RUN rm -f jdk-8u131-linux-x64.tar.gz
 # 下载解压 Maven
-RUN wget https://dlcdn.apache.org/maven/maven-3/3.6.3/binaries/apache-maven-3.6.3-bin.tar.gz --no-check-certificate
+RUN wget https://repo.maven.apache.org/maven2/org/apache/maven/apache-maven/3.6.3/apache-maven-3.6.3-bin.tar.gz --no-check-certificate
 RUN tar -zxvf apache-maven-3.6.3-bin.tar.gz
 RUN mv apache-maven-3.6.3 maven
 RUN rm -f apache-maven-3.6.3-bin.tar.gz
