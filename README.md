@@ -11,7 +11,7 @@
 
 ## 注意
 1. 如果你想通过 GitHub Action 来构建镜像，Fork 本仓库后请在 Settings → Secrets 处添加你 Docker Hub 的 $DOCKER_HUB_USERNAME 和 $DOCKER_HUB_ACCESS_TOKEN。  
-2. 如果你不想把 datax 作为 GitHub Action 自动构建用的镜像名，那么你需要前往 .github/workflows/main.yaml 第[ 33 ](https://github.com/senjianlu/DataX-docker/blob/main/.github/workflows/main.yaml#L33)行做相应修改。
+2. 如果你不想把 datax 作为 GitHub Action 自动构建用的镜像名，那么你需要前往 .github/workflows/main.yaml 第[ 28 ](https://github.com/senjianlu/DataX-docker/blob/main/.github/workflows/main.yaml#L28)行做相应修改。
 
 ## 使用手册
 **生成容器镜像：**  
