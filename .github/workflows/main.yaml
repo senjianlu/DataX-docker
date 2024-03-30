@@ -19,10 +19,10 @@ jobs:
       - name: Login to DockerHub
         uses: docker/login-action@v1
         with:
-          username: ${{ secrets.DOCKER_USERNAME }}
+          username: ${{ secrets.DOCKER_HUB_USERNAME }}
           password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
       - name: Build and push
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/datax:${{ github.sha }} , ${{ secrets.DOCKER_USERNAME }}/datax:latest
+          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/datax:${{ github.sha }} , ${{ secrets.DOCKER_HUB_USERNAME }}/datax:latest
